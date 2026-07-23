@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Machine Learning Model</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="bubble">
+      <h1>IrisCheck</h1>
+      <p>
+        1.press start 2.capture your eye in the frame 3.make sure you use good
+        lighting 4. ensure theres no light reflecting on your eye for accurate
+        results
+      </p>
+
+      <button type="button" onclick="init()" id="start">Start!</button>
+
+      <div id="webcam-container"></div>
+      <!-- Camera for testing data -->
+      <div id="label-container"></div>
+      <!-- Show the predicted label -->
+    </div>
+
+    <div class="bubble">
+      <h1>About the Creator</h1>
+      <p>
+        hello, my name is Yara Abukhuzima. im a 18 year old aspiring biomedical
+        engineer. this is my first machine learning model and website. made
+        through CAB by KWK
+
+        <img src="WhatsApp Image 2025-12-20 at 9.02.59 PM.jpeg" width="250px" />
+      </p>
+    </div>
+    <div class="bubble">
+      <h1>what does IrisCheck do?</h1>
+      <p>
+        IrisCheck is a machine learning model that is focused on diagnosing 4
+        different diseases based on an image of your eye which are: pinkeye,
+        anemia, jaundice and cataract!
+
+        <img src="Iris Ceck.png" width="230px" />
+
+        DISCLAIMER: this project is still not 100 percent accurate and its not a
+        fully dependable source of diagnosis, if you feel like something is
+        wrong please go to the doctor!
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

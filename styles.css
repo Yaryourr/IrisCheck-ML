@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: Times New Roman ;
+/* TODO: Edit the properties below to customize your website! */
+body {
+  background-color: rgb(18, 29, 65) ;
+  align-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 20px 50px 30px 50px;
+}
+
+p {
+  width: 80%;
+  text-align: center;
+  margin: 10px 50px;
+}
+
+.bubble {
+  background-color: rgb(156, 179, 255);
+  border-radius: 10px;
+ align-items: center;
+  width: 80%;
+  padding: 5px 0;
+  margin: 50px 0 10px 0;
+}
+
+/* Edit me to change the appearance of the button! */
+button {
+  font-size: 12pt;
+
+  background-color: #ffdada;
+  border: none;
+  /* for rounded corners */
+  border-radius: 5px;
+
+  width: 150px;
+  height: 50px;
+  margin: 20px 50px;
+}
+
+button:hover {
+  background-color: #95b7ff;
+  cursor: pointer;
+}
+
+/* The camera */
+#webcam-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* The labels */
+#label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 12pt;
+
+  margin: 25px;
+}
+
+img {
+  margin: 50px;
+  border: 5px solid;
+}
