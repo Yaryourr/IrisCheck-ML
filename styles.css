@@ -1,85 +1,165 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: Times New Roman ;
-/* TODO: Edit the properties below to customize your website! */
+  font-family: "Times New Roman", Times, serif;
+}  
+
 body {
-  background-color: rgb(18, 29, 65) ;
+  background-color: rgb(18, 29, 65);
+  
+  background-image: 
+    radial-gradient(circle at top left, rgba(156, 179, 255, 0.15) 0%, transparent 300px),
+    radial-gradient(circle at bottom right, rgba(255, 218, 218, 0.12) 0%, transparent 350px),
+    radial-gradient(circle at top right, rgba(149, 183, 255, 0.1) 0%, transparent 250px);
+  
+  background-attachment: fixed; 
+  color: white;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 30pt;
-  margin: 20px 50px 30px 50px;
+  font-size: clamp(24pt, 5vw, 36pt); 
+  margin: 20px 0;
 }
 
 p {
-  width: 80%;
+  width: 100%;
+  max-width: 600px;  
   text-align: center;
-  margin: 10px 50px;
-  font-size: 15pt;
+  margin: 15px auto;
+  font-size: clamp(12pt, 3vw, 15pt); 
 }
 
 .bubble {
   background-color: rgb(156, 179, 255);
+  color: #121d41; 
   border-radius: 10px;
-  align-self: center;
- align-items: center;
- justify-content: center;
-  width: 80%;
-  padding: 10px 0;
-  margin: 50px 0 10px 0;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 30px auto;
+  box-sizing: border-box;
 }
 
-/* Edit me to change the appearance of the button! */
-button {
+.controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin: 30px auto 10px auto;
+  width: 100%;
+}
+
+.btn-start, .upload-btn, .btn-capture,  .btn-restart {
+  font-family: "Times New Roman", Times, serif;
   font-size: 12pt;
-
+  font-weight: normal;
   background-color: #ffdada;
+  color: #121d41; 
   border: none;
-  /* for rounded corners */
   border-radius: 5px;
-
+  
   width: 150px;
   height: 50px;
-  margin: 20px 50px;
-}
-
-button:hover {
-  background-color: #95b7ff;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
 }
 
-/* The camera */
+.btn-start:hover, .upload-btn:hover, .btn-capture:hover, .btn-restart:hover {
+  background-color: #95b7ff; 
+}
+
 #webcam-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin: 20px 0;
 }
 
-/* The labels */
+#webcam-container canvas, 
+#webcam-container video {
+  max-width: 80% !important;
+  height: auto !important;
+  border-radius: 8px;
+}
+
+
 #label-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  font-size: 12pt;
-
-  margin: 25px;
+  font-size: 14pt;
+  margin: 20px;
+  text-color: #121d41;
 }
+
+
+.cat{
+  max-width: 70%;
+  hight: auto;
+  border-color: white;
+  border-radius: 25%;
+  border-style:outset;
+  width: 190px;
+}
+
+
 
 img {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 5px solid;
-  text-align: center;
-  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto;
+  display: block;
 }
 
+#Yara {
+  border-color: white;
+  border-radius: 30%;
+  border-style:outset ;
+}
+
+#dis {
+  color: crimson;
+}
+.diseases { 
+  color: white;
+}
+
+a {
+  color: black;
+  text-align: center;
+  margin: 15px auto
+  font-size: clamp(20pt, 4vw, 30pt)
+}
+/* STYLE NAV BAR */
+ul {list-style-type: none;
+  background-color: #95b7ff;
+  overflow: hidden;
+  padding:0.2em;}
+
+li {display: inline;
+  justify-content: space-between;
+ }
+li a { text-decoration: none;
+     color: #121d41;
+     font-size: 1.5em;
+     padding: 1em;}
+li a:hover {
+background-color:white;
+}
