@@ -1,4 +1,5 @@
-#IrisCheck: Computer-vision, Web-integrated ML Model for Eye Imaging.
+<h1>IrisCheck: Computer-vision, Web-integrated ML Model for Eye Imaging.</h1>
+
 <img width="500" height="500" alt="iris" src="https://github.com/user-attachments/assets/34e741ff-0ee3-4540-8974-438406d20368" />
 
 ##Features 
