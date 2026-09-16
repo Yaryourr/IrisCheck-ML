@@ -3,55 +3,81 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>IrisCheck-Computer Vision Model</title>
+    <title>My Machine Learning Model</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="icons8-search-cute-blue-icon-32.png">
   </head>
+  <head>
+    
+    <title>IrisCheck</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+  </head>
+  
   <body>
-    <div class="bubble">
-      <h1>IrisCheck</h1>
-      <p>
-        1.press start 2.capture your eye in the frame 3.make sure you use good
-        lighting 4. ensure theres no light reflecting on your eye for accurate
-        results
-      </p>
+    <header>
+     <h1>Home</h1>
+     <img src="iris.png" width="400px" /> <head>
+      
+      <img icon= iris.png />
+      <title>IrisCheck Home</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <!-- link the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css" />
+  
+      <!-- link the webpage's JavaScript file -->
+      <script src="/script.js" defer></script>
+  
+    </head>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href= index.html class="active">Home</a></li>
+            <li><a href= iris.html class="active">Model</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </nav>
 
-      <button type="button" onclick="init()" id="start">Start!</button>
+      <div class="bubble">
+               
+       <h1>About IrisCheck</h1>
+        <p>
+          IrisCheck is a machine learning model that is focused on diagnosing 4
+          different diseases based on computer vision & machine learning in eye imaging, as an attempt to make the process of diagnosing diseases easier & more accesible with just a click of a button!</p>
+          <p>-This Model was fully trained on google teachable machine, Website programmed on CodeSandbox & Published on Github.
+        </p>
+      </div>
 
-      <div id="webcam-container"></div>
-      <!-- Camera for testing data -->
-      <div id="label-container"></div>
-      <!-- Show the predicted label -->
-    </div>
+      <div class="bubble">
+        <h1 class=diseases>Jaundice</h1>
+      <p>A visible yellowing of the skin and the whites of the eyes (called the sclera). This happens when there is a high buildup of a yellow pigment called bilirubin in the bloodstream, which is typically a sign that the liver, gallbladder, or pancreas isn't functioning properly.</p>
+      <img class=cat src="images (16).jfif" />
+<h1 class=diseases>Anemia</h1>
+<p>A medical condition that occurs when your blood has a lower-than-normal amount of healthy red blood cells or hemoglobin. Because red blood cells carry oxygen throughout the body, a lack of them causes fatigue and weakness. In the eyes, it is often spotted by a distinct paleness inside the lower eyelid.</p>
+<img class=cat src="anemicc.jpg" />
+<h1 class=diseases>Cataract</h1>
+<p>A progressive, painless clouding of the eye's natural lens, which sits behind the iris and pupil. As proteins in the lens clump together over time, they block light from passing through cleanly. This leads to blurry or misty vision and can eventually cause the pupil to look milky or cloudy.</p>
+<img class=cat src="cataract.png" />
+<h1 class=diseases>Pinkeye (Conjunctivitis)</h1>  
+<p> An inflammation or infection of the clear membrane that covers the white part of your eyeball and lines your eyelids. It dilates the tiny blood vessels in the eye, causing the characteristic redness, alongside irritation, itchiness, and a gritty feeling or discharge.</p>  
+<img class=cat src="conj.jfif" />
+      </div>
 
-    <div class="bubble">
-      <h1>About the Creator</h1>
-      <p>
-        hello, my name is Yara Abukhuzima. im a 18 year old aspiring biomedical
-        engineer. this is my first machine learning model and website. made
-        through CAB by KWK
 
-        <img src="WhatsApp Image 2025-12-20 at 9.02.59 PM.jpeg" width="250px" />
-      </p>
-    </div>
-    <div class="bubble">
-      <h1>what does IrisCheck do?</h1>
-      <p>
-        IrisCheck is a machine learning model that is focused on diagnosing 4
-        different diseases based on an image of your eye which are: pinkeye,
-        anemia, jaundice and cataract!
-
-        <img src="Iris Ceck.png" width="230px" />
-
-        DISCLAIMER: this project is still not 100 percent accurate and its not a
-        fully dependable source of diagnosis, if you feel like something is
-        wrong please go to the doctor!
-      </p>
-    </div>
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
