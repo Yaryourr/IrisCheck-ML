@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Machine Learning Model</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <head>
+    
+    <title>IrisCheck</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+<img icon= iris.png />
+
+     <h1>ML Model</h1>
+
+     <img src= "iris.png"  width="400px" /> <head>
+    
+      <title>IrisCheck Model Page</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <!-- link the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css" />
+  
+      <!-- link the webpage's JavaScript file -->
+      <script src="/script.js" defer></script>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href= index.html class="active">Home</a></li>
+          <li><a href= iris.html class="active">Model</a></li>
+          <li><a href="about.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="intro">Welcome to IrisCheck Model!, here you can try the model and get your results. we hope for you to have a good experience!
+      </p>
+
+    </body>
+  <body>
+    <div class="bubble">
+      <h1>Instructions:</h1>
+
+    <p> 1.press start  </p>
+
+    <p>   2.capture your eye in the frame  </p>
+
+    <p>   3.make sure you use good
+        lighting  </p>
+        
+    <p>  4.ensure theres no light reflecting on your eye for accurate
+        results </p>
+     
+
+      
+        <div class="camera-section">
+            <div id="webcam-container">
+              <img id="uploaded-image-preview" src="" alt="Uploaded eye preview" style="display: none; max-width: 100%; height: auto;" />
+            </div>
+            
+            <!-- أزرار التحكم المجمعة بشكل متناسق -->
+            <div class="camera-section">
+              <div id="webcam-container">
+                <img id="uploaded-image-preview" src="" alt="Uploaded eye preview" style="display: none; max-width: 100%; height: auto;" />
+              </div>
+              
+              <!-- أزرار التحكم المجمعة (الآن تحتوي على زر الـ Restart دائماً) -->
+              <div class="controls">
+                <button type="button" class="btn-start" onclick="init()">Use Camera</button>
+                
+                <!-- زر الالتقاط (يظهر فقط أثناء عمل الكاميرا) -->
+                <button type="button" id="capture-btn" class="btn-capture" style="display: none;" onclick="captureCamera()">Capture Image</button>
+                
+                <label for="image-selector" class="upload-btn">Upload Photo</label>
+                <input type="file" id="image-selector" accept="image/*" onchange="handleImageUpload(event)" style="display: none;">
+                
+                <!-- زر إعادة التشغيل (موجود دائماً لمساعدة المستخدم على البدء من جديد في أي وقت) -->
+                <button type="button" class="btn-restart" onclick="restartApp()">Restart</button>
+              </div>
+            </div>
+            
+            <!-- صندوق النتيجة الأكثر احتمالاً والرسم البياني (بدون زر ريستارت بداخله الآن) -->
+            <div id="result-box" style="display: none; margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+              <h3 id="top-prediction" style="font-size: 18pt; margin-bottom: 15px; color: #ffdada;">Most Likely Result: --</h3>
+              
+              <div id="graph-container" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; text-align: left;">
+                <!-- أشرطة الرسم البياني -->
+              </div>
+            </div>
+    
+            
+          <!-- الحاوية القديمة للمقارنة المباشرة (يمكنك تركها مخفية أو مسحها) -->
+      <div id="label-container" style="display:none;"></div>
+      <div id="result-box" style="display: none; margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+        <h3 id="top-prediction" style="font-size: 18pt; margin-bottom: 15px; color: #ffdada;">Most Likely Result: --</h3>
+        
+        <!-- حاوية الرسم البياني التخطيطي -->
+        <div id="graph-container" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; text-align: left;">
+          <!-- سيتم بناء أشرطة الرسم البياني هنا تلقائياً -->
+        </div>    
+        <!-- زر إعادة التشغيل المضاف حديثاً -->
+        <button type="button" class="btn-restart" onclick="restartApp()" style="margin-top: 20px;">Restart</button>
+      </div>
+        </div>
+   
+       <div>
+        <div class="bubble">
+          <h1 id=dis>DISCLAIMER</h1>
+            <p>
+           this project is still not 100 percent accurate and its not a
+            fully dependable source of diagnosis, if you feel like something is
+            wrong please go to the doctor!!
+          </p>
+        </div>
+      </div>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
